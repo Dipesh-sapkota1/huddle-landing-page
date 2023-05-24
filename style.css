@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+ 
+:root{
+--clr-violet: hsl(257, 40%, 49%);
+--clr-soft-magenta: hsl(300, 69%, 71%);
+
+--fn-default: 'Open Sans', sans-serif;
+--fn-heading: 'Poppins', sans-serif;
+--fw-400: 400;
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,svg,picture{
+    width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{margin-bottom: 0.5rem;}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    font-family: var(--fn-default);
+    background: url('./images/bg-desktop.svg') no-repeat center center/cover;
+    background-color: var(--clr-violet);
+    color: #fff;
+}
+/* Utility */
+.container{
+    max-width: 1330px;
+    padding: 0 1.2rem;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 4.2rem;
+    border: none;
+    border-radius: 2rem;
+    background: #fff;
+    text-align: center;
+    color: var(--clr-violet);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+}
+.btn:hover,
+.btn:active{
+    background-color: var(--clr-soft-magenta);
+    color: #fff;
+}
+
+/* Header */
+
+#main-header{
+    height: 100vh;
+}
+.main-navbar{
+    display: flex;
+    padding: 3rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    width: 12.6rem;
+}
+
+/* Showcase */
+.showcase-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1200px;
+    margin: 0 auto;
+}
+.illustration{
+    width: 100%;
+}
+.showcase-content{   
+    margin: 2rem 3rem;
+    padding: 0 3rem;
+}
+.showcase-heading{
+    font-weight: var(--fw-700);
+    padding-bottom: 0.6rem;
+}
+.showcase-text{
+    padding-bottom: 1.1rem;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5;
+    width: 100%;
+    
+}
+.social li a i {
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 50%;
+}
+.social li a {
+    margin-left: 1rem;
+}
+.social li:hover,
+.social li:focus{
+    color: var(--clr-soft-magenta);
+}
