@@ -101,7 +101,7 @@ body{
     border-color: var(--clr-soft-magenta);
   
 }
-.social span a:hover{
+.social span i:hover{
     color: var(--clr-soft-magenta);
 }
 
