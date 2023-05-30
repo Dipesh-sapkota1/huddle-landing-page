@@ -55,6 +55,7 @@ body{
     color: var(--clr-violet);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 .btn:hover,
 .btn:active{
@@ -99,6 +100,7 @@ body{
 }
 .social span:hover{
     border-color: var(--clr-soft-magenta);
+    cursor: pointer;
   
 }
 .social span i:hover{
