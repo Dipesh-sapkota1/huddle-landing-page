@@ -110,8 +110,7 @@ body{
        body{
         display: grid;
         place-content: center;
-        background: url(./images/bg-desktop.svg) no-repeat;
-        background-position: right 150px bottom -49px ;
+        background: url(./images/bg-desktop.svg) no-repeat center center/cover;
         background-color: var(--clr-violet);
     }
     .showcase-container{
